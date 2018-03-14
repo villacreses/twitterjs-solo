@@ -1,0 +1,23 @@
+{
+  "name": "twitterjs-solo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/villacreses/twitterjs-solo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/villacreses/twitterjs-solo/issues"
+  },
+  "homepage": "https://github.com/villacreses/twitterjs-solo#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
