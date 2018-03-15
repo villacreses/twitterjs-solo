@@ -13,8 +13,26 @@ app.use(function (req, res, next) {
   next();
 });
 
+app.set('view engine', 'html'); // Have res.render work with html files
+app.engine('html', nunjucks.render); // res.render uses nunjucks for html files
+nunjucks.configure('views', {noCache: true}); // point nunjucks to the designated template directory
+
+var locals = {
+  title: 'An Example',
+  people: [
+    { name: 'Gandalf' },
+    { name: 'Frodo' },
+    { name: 'Hermione' }
+  ]
+};
+
+//nunjucks.render('index.html', locals, function (err, output) {
+//  console.log(output);
+//});
+
 app.get('/', function (req, res) {
-  res.send('Hello world!');
+  // res.send('Hello world!');
+  res.render('index', locals); // use the Nunjucks templating docs to see what else you can send
 });
 
 app.listen(3000, function () {
