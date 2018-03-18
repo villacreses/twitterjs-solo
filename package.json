@@ -19,6 +19,8 @@
   "homepage": "https://github.com/villacreses/twitterjs-solo#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "nunjucks": "^3.1.2"
+    "lodash": "^4.17.5",
+    "nunjucks": "^3.1.2",
+    "socketio": "^1.0.0"
   }
 }
