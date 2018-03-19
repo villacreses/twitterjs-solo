@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/villacreses/twitterjs-solo#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "lodash": "^4.17.5",
     "nunjucks": "^3.1.2",
+    "pg": "^7.4.1",
     "socketio": "^1.0.0"
   }
 }
